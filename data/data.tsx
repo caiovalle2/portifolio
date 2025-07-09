@@ -120,5 +120,5 @@ export const myProjects = [
       
     ],
     githubLink: 'https://github.com/caiovalle2/INF-1370',
-  },
+  }
 ]
