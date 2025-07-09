@@ -9,7 +9,7 @@ export default function Resume() {
         <div className="rounded-full border border-white overflow-hidden">
           <Image
             src=""
-            alt=""
+            alt="profile picture"
             width={100}
             height={100}
           />

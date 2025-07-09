@@ -1,4 +1,3 @@
-import Image from "next/image"
 import Cards from "../cards/Cards";
 import { myProjects } from "../../../data/data";
 

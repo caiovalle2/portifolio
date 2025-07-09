@@ -15,7 +15,7 @@ export default function Experience({ experiences }: ExperienceProps) {
       <div className="max-w-7xl mx-auto space-y-8 text-white">
         <h2 className="text-4xl font-bold">Experiência</h2>
 
-        <div className="space-y-8 px-4">
+        <div className="space-y-4 px-4">
           {experiences.map((exp, index) => (
             <div
               key={index}

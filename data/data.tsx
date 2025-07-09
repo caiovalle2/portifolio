@@ -17,19 +17,20 @@ export const skils = [
 
 export const experiences = [
   {
-    role: "Full Stack Developer",
-    company: "Company X",
-    period: "Jan 2023 - Present",
-    description: "Developed web applications using React and Django, creating responsive interfaces and APIs.",
+    role: "Desenvolvedor Júnior",
+    company: "Float Health",
+    period: "Abr 2025 - Atual",
+    description:
+      "Atuação no desenvolvimento de aplicações front-end utilizando Next.js, com integração de APIs REST e criação de componentes reutilizáveis e responsivos. Implementação de automações com Python e n8n para integração entre sistemas e otimização de fluxos de dados. Realização de web scraping com bibliotecas como Selenium, BeautifulSoup e Pandas, visando à extração, tratamento e carga de dados em bancos de dados. Aplicação de boas práticas de acessibilidade, versionamento com Git e colaboração em ambiente ágil.",
   },
   {
-    role: "Backend Developer",
-    company: "Company Y",
-    period: "Jul 2021 - Dec 2022",
-    description: "Built and maintained backend systems using Django Rest Framework and optimized database queries.",
+    role: "Desenvolvedor Back-End - Estagiário",
+    company: "inRadar",
+    period: "Fev 2022 - Set 2023",
+    description:
+      "Desenvolvimento e manutenção de APIs RESTful utilizando Django e Tastypie, com foco em escalabilidade e segurança. Implementação de operações CRUD (Create, Read, Update, Delete) para diferentes modelos de dados, garantindo funcionalidade e consistência nos endpoints da aplicação. Criação de testes unitários e de integração com Pytest, aumentando a cobertura e a confiabilidade do sistema. Integração com bancos de dados MySQL e utilização de tarefas assíncronas com Celery. Participação em cerimônias ágeis (Scrum/Kanban), práticas de pair programming e uso de ferramentas como Jira, Bitbucket e Postman para controle de qualidade e gestão de projetos. Configuração de ambientes Linux e versionamento com Git.",
   },
 ];
-
 
 export const myProjects = [
   {
@@ -38,7 +39,15 @@ export const myProjects = [
     description: 'Projeto de jogo de tabuleiro digital que recria o tradicional Latitude 90º. Desenvolvido em Java com Swing, desafia jogadores a alcançar o polo adversário, com funcionalidades de salvar e carregar partidas.',
     tags: [
       { img: '/java.png', label: 'Java' },
+      { img: '', label: 'Swing' },
+      { img: '', label: 'POO' },
+      { img: '/Git.png', label: 'Git' },
+      { img: '/github.png', label: 'Github' },
+      { img: '', label: 'manipulacao de arquivos' },
+      { img: '', label: 'JUnit' }
+
     ],
+    githubLink: 'https://github.com/caiovalle2/Projeto-Latitude90',
   },
   {
     image: '/mastermind.png',
@@ -46,7 +55,12 @@ export const myProjects = [
     description: 'Implementação do jogo Mastermind, um jogo de raciocínio lógico para adivinhar uma senha de cores. Desenvolvido em Python com Tkinter, seguindo o padrão de arquitetura MVC.',
     tags: [
       { img: '/python.png', label: 'Python' },
+      { img: '', label: 'Tkinter' },
+      { img: '', label: 'MVC' },
+      { img: '', label: 'manipulacao de arquivos' },
+
     ],
+    githubLink: 'https://github.com/caiovalle2/MasterMind',
   },
   {
     image: '/todolist.png',
@@ -56,7 +70,16 @@ export const myProjects = [
       { img: '/react.png', label: 'React.js' },
       { img: '/django.png', label: 'Django' },
       { img: '/MySql.png', label: 'PostgreSQL' },
+      { img: '', label: 'Next.js' },
+      { img: '', label: 'Django Rest Framework' },
+      { img: '/Git.png', label: 'Git' },
+      { img: '/github.png', label: 'Github' },
+      { img: '/Tailwind.png', label: 'Tailwind CSS' },
+      { img: '', label: 'Autenticação de usuários' },
+      { img: '', label: 'CRUD' },
+      { img: '', label: 'Drag and Drop' }
     ],
+    githubLink: 'https://github.com/caiovalle2/task-management-fullstack',
   },
   {
     image: '/algoritmo-busca.png',
@@ -65,15 +88,37 @@ export const myProjects = [
     tags: [
       { img: '/python.png', label: 'Python' },
       { img: '', label: 'Inteligência Artificial' },
+      { img: '', label: 'Algoritmo A*' },
+      { img: '', label: 'Algoritmo Genético' },
+      { img: '', label: 'Otimização' }
     ],
+    githubLink: 'https://github.com/caiovalle2/INF1771-Trabalho1',
   },
   {
-    image: '/images/bot-pontuacao.png',
+    image: '',
     title: 'Desafio dos drones',
     description: 'Um projeto de automação de bot que usa máquinas de estado para gerenciar comportamentos dinâmicos (como desviar de obstáculos, caçar tesouros e atacar) e o algoritmo de busca heurística A* para otimizar a exploração do mapa e maximizar a pontuação.',
     tags: [
       { img: '/python.png', label: 'Python' },
       { img: '', label: 'Inteligência Artificial' },
+      { img: '', label: 'Algoritmo A*' },
+      { img: '', label: 'Máquinas de Estado' },
+      { img: '', label: 'Automação' }
     ],
+    githubLink: 'https://github.com/caiovalle2/INF1771-Trabalho4',
+  },
+  {
+    image: '/servidor.png',
+    title: 'Servidor em C',
+    description: 'Servidor concorrente em C capaz de atender múltiplos clientes simultaneamente via threads. Permite execução em background e configuração via linha de comando, incluindo porta, logs e diretório raiz.',
+    tags: [
+      { img: '/c.png', label: 'C' },
+      { img: '', label: 'Threads' },
+      { img: '', label: 'Sockets' },
+      { img: '', label: 'Concorrência' },
+      
+      
+    ],
+    githubLink: 'https://github.com/caiovalle2/INF-1370',
   },
 ]

@@ -8,6 +8,7 @@ interface CardItem {
   title: string;
   description: string;
   tags: { img: string; label: string }[];
+  githubLink: string;
 }
 
 interface CardsProps {
@@ -36,15 +37,15 @@ export default function Cards({ cardsData }: CardsProps) {
             <div className="flex flex-col gap-4 p-4 mt-2">
               <h2 className="text-xl font-bold">{card.title}</h2>
               <p className="text-gray-700 line-clamp-4">{card.description}</p>
-              <Tags tags={card.tags} />
+              <Tags tags={card.tags.slice(0, 3)} />
             </div>
           </div>
         ))}
       </div>
 
       {selectedCard && (
-        <div className="fixed top-0 right-0 h-screen w-1/3 bg-opacity-50 flex justify-end z-50">
-          <div className="bg-white w-full h-screen p-8 overflow-auto relative transition-transform duration-300">
+        <div className="fixed top-0 right-0 h-screen w-full md:w-1/3 bg-opacity-50 flex justify-end z-50 md:p-8">
+          <div className="bg-gray-900 p-8 w-full rounded-lg md:rounded-xl shadow-2xl overflow-auto relative transition-transform duration-300">
             <button
               className="absolute top-4 right-4 text-gray-600 hover:text-black text-3xl"
               onClick={() => setSelectedCard(null)}
@@ -59,8 +60,23 @@ export default function Cards({ cardsData }: CardsProps) {
               height={300}
               className="object-cover h-[300] rounded-xl mb-4"
             />
-            <h2 className="text-3xl text-black font-bold mb-4">{selectedCard.title}</h2>
-            <p className="text-gray-700 mb-4">{selectedCard.description}</p>
+            <h2 className="text-4xl text-white font-bold mb-4">{selectedCard.title}</h2>
+            <p className="text-gray-400 mb-2">{selectedCard.description}</p>
+            <a
+                href={selectedCard.githubLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center mt-2 mb-4 p-2 rounded-full border-2 border-gray-700 bg-gray-800 hover:bg-gray-700"
+                aria-label="Ver projeto no GitHub"
+              >
+                <Image
+                  src="/github.png"
+                  alt="GitHub Icon"
+                  width={30}
+                  height={30}
+                />
+                <span className="ml-2 text-white font-bold">GitHub</span>
+              </a>
             <Tags tags={selectedCard.tags} />
           </div>
         </div>
