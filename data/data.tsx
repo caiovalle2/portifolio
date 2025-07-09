@@ -84,7 +84,7 @@ export const myProjects = [
   {
     image: '/algoritmo-busca.png',
     title: 'Busca A*',
-    description: 'Trabalho de Inteligência Artificial focado no algoritmo A* para encontrar a rota de menor custo e um algoritmo genético para otimizar combinações de jogadores em percursos.',
+    description: `Este projeto implementa o algoritmo A* para encontrar a rota de menor custo em uma matriz, utilizando distância euclidiana como heurística. Também aplica um algoritmo genético para otimizar a escolha de jogadores, buscando a combinação com menor tempo total para completar o percurso.`,
     tags: [
       { img: '/python.png', label: 'Python' },
       { img: '', label: 'Inteligência Artificial' },
@@ -92,7 +92,7 @@ export const myProjects = [
       { img: '', label: 'Algoritmo Genético' },
       { img: '', label: 'Otimização' }
     ],
-    githubLink: 'https://github.com/caiovalle2/INF1771-Trabalho1',
+    githubLink: 'https://github.com/caiovalle2/INF1771-Trabalho1'
   },
   {
     image: '',
