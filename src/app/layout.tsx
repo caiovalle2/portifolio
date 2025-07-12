@@ -30,7 +30,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
       >
-        <main className="flex-grow bg-gray-800">
+        <main className="flex-grow bg-gradient-to-b from-gray-900 to-gray-800">
           {children}
         </main>
 

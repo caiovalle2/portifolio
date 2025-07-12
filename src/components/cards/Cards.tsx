@@ -24,7 +24,7 @@ export default function Cards({ cardsData }: CardsProps) {
         {cardsData.map((card, index) => (
           <div
             key={index}
-            className="bg-white w-[400px] text-black shadow-lg rounded-lg overflow-hidden hover:scale-105 hover:shadow-lg transition-transform duration-300 cursor-pointer"
+            className="bg-gradient-to-b from-gray-900 to-gray-800 w-[400px] text-black shadow-lg rounded-lg overflow-hidden hover:scale-105 hover:shadow-lg transition-transform duration-300 cursor-pointer"
             onClick={() => setSelectedCard(card)}
           >
             <Image
@@ -35,8 +35,8 @@ export default function Cards({ cardsData }: CardsProps) {
               className="object-cover h-[200]"
             />
             <div className="flex flex-col gap-4 p-4 mt-2">
-              <h2 className="text-xl font-bold">{card.title}</h2>
-              <p className="text-gray-700 line-clamp-4">{card.description}</p>
+              <h2 className="text-gray-400 text-xl font-bold">{card.title}</h2>
+              <p className="text-white line-clamp-4">{card.description}</p>
               <Tags tags={card.tags.slice(0, 3)} />
             </div>
           </div>

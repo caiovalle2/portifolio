@@ -5,7 +5,7 @@ import { skils } from "../../../data/data";
 export default function Resume() {
   return (
     <section>
-      <div className="mx-auto max-w-7xl bg-gray-800 flex flex-col justify-center items-center text-white gap-6 p-10">
+      <div className="mx-auto max-w-7xl flex flex-col justify-center items-center text-white gap-6 p-10">
         <div className="rounded-full border border-white overflow-hidden">
           <Image
             src=""
